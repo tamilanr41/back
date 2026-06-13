@@ -29,7 +29,7 @@ app.use(express.json({ limit: '5mb' }));
 app.use('/api/auth', authRoutes);
 app.use('/api/chat', chatRoutes);
 app.use('/api/memories', memoriesRoutes);
-app.use('/api/couple', coupleRoutes);
+app.use('/api/auth/couple', coupleRoutes);
 
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
